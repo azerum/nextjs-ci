@@ -32,16 +32,16 @@ devDependencies:
     version: 29.5.1
   fetch-mock-jest:
     specifier: ^1.5.1
-    version: 1.5.1(node-fetch@3.3.1)
+    version: 1.5.1
   jasmine:
     specifier: ^5.0.0
     version: 5.0.0
   jest:
     specifier: ^29.5.0
     version: 29.5.0(@types/node@20.2.4)
-  node-fetch:
-    specifier: ^3.3.1
-    version: 3.3.1
+  node-fetch-commonjs:
+    specifier: ^3.2.4
+    version: 3.2.4
   ts-jest:
     specifier: ^29.1.0
     version: 29.1.0(@babel/core@7.22.0)(jest@29.5.0)(typescript@5.0.4)
@@ -1456,11 +1456,6 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: false
 
-  /data-uri-to-buffer@4.0.1:
-    resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
-    engines: {node: '>= 12'}
-    dev: true
-
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -2077,7 +2072,7 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: true
 
-  /fetch-mock-jest@1.5.1(node-fetch@3.3.1):
+  /fetch-mock-jest@1.5.1:
     resolution: {integrity: sha512-+utwzP8C+Pax1GSka3nFXILWMY3Er2L+s090FOgqVNrNCPp0fDqgXnAHAJf12PLHi0z4PhcTaZNTz8e7K3fjqQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -2086,13 +2081,12 @@ packages:
       node-fetch:
         optional: true
     dependencies:
-      fetch-mock: 9.11.0(node-fetch@3.3.1)
-      node-fetch: 3.3.1
+      fetch-mock: 9.11.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /fetch-mock@9.11.0(node-fetch@3.3.1):
+  /fetch-mock@9.11.0:
     resolution: {integrity: sha512-PG1XUv+x7iag5p/iNHD4/jdpxL9FtVSqRMUQhPab4hVDt80T1MH5ehzVrL2IdXO9Q2iBggArFvPqjUbHFuI58Q==}
     engines: {node: '>=4.0.0'}
     peerDependencies:
@@ -2108,7 +2102,6 @@ packages:
       glob-to-regexp: 0.4.1
       is-subset: 0.1.1
       lodash.isequal: 4.5.0
-      node-fetch: 3.3.1
       path-to-regexp: 2.4.0
       querystring: 0.2.1
       whatwg-url: 6.5.0
@@ -3394,13 +3387,12 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: true
 
-  /node-fetch@3.3.1:
-    resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
+  /node-fetch-commonjs@3.2.4:
+    resolution: {integrity: sha512-bZW7+ldcuuMPLTJk8DufhT6qHDRdljYD0jqBjmrYfcInaYcReX5kK42SQsu/jvtit/tER28yYjnk63PEEmNPtg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      data-uri-to-buffer: 4.0.1
-      fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
+      web-streams-polyfill: 3.2.1
     dev: true
 
   /node-int64@0.4.0:
