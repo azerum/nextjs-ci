@@ -1,0 +1,11 @@
+name: run-tests-on-pull-request
+on: [pull_request]
+
+jobs:
+  run_tests:
+    # LTS Ubuntu
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo $(git rev-parse HEAD)
